@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+body{
+    background: rgba(53,0,102,1);
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 300px;
+    color: rgba(127,255,224,1);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.first{
+    width: 100px;
+    height: 300px; 
+    background: rgba(127,255,224,1);
+    align-self: flex-start;  
+}
+
+.second{
+    width: 100px;
+    height: 300px; 
+    background: rgba(127,255,224,1);
+    align-self: center;
+}
+
+.third{
+    width: 100px;
+    height: 300px; 
+    background: rgba(127,255,224,1);
+    align-self: flex-end;
+}
+
+.fourth{
+    width: 100px;
+    height: 300px; 
+    background: rgba(127,255,224,1);
+    align-self: flex-start;
+}
+
+.sixth{
+    width: 100px;
+    height: 300px; 
+    background: rgba(127,255,224,1);
+    align-self: center
+}
+.seventh{
+    width: 100px;
+    height: 300px; 
+    background: rgba(127,255,224,1);
+    align-self: flex-end;
+}
+
+[data-anime]{
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px,0,0);
+}
+[data-anime="rigth"]{
+    transform: translate3d(50px,0,0);
+}
+[data-anime="top"]{
+    transform: translate3d(0px,-50px,0);
+}
+[data-anime="down"]{
+    transform: translate3d(0px,50px,0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+
